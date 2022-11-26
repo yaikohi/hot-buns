@@ -1,10 +1,10 @@
 # Hono with Bun runtime
 Deployed to railway.app using docker
 
-Not sure about the name yet. Vuurbao ? Hot-buns ?
+Not sure about the name yet. `vuurbao` ? `hot-buns` ?
 
-# Deploying a hono app using bun and docker
-## hono and bun
+# Deploying a bun/hono app with docker
+## project setup
 in your shell:
 - `bun create hono ./hono-app`
 - `cd hono-app`
