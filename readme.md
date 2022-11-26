@@ -26,12 +26,34 @@ ENTRYPOINT ["bun", "run", "src/index.ts"]
 ## adding git and uploading the repo to github
 - go to [github.com](https://github.com), login, create a new repo.
 - go back to the terminal and inside the project directory 
-- `git init`
-- `git branch -M main`
-- `git remote add origin (git repo url here)`
-- `git push -u origin main`
-- create a dev branch because we supposedly want to do things correctly `git checkout -b dev`
-- `git push -u origin dev`
+
+
+```bash 
+git init
+```
+
+
+```bash
+git branch -M main
+```
+
+
+```bash
+git remote add origin 'git repo url here'
+```
+
+
+```bash
+git push -u origin main
+```
+- create a dev branch because we supposedly want to do things correctly 
+```bash
+git checkout -b dev
+```
+
+```bash
+git push -u origin dev
+```
 
 ## deploying to railway with the railway CLI
 - go to [railway.app](https://railway.app)
