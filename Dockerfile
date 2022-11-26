@@ -1,8 +1,8 @@
 FROM jarredsumner/bun:edge
-WORKDIR /app
+WORKDIR /src
 COPY package.json package.json
 COPY bun.lockb bun.lockb
 RUN bun install
 COPY . .
 EXPOSE 3000
-ENTRYPOINT ["bun", "index.js"]
+ENTRYPOINT ["bun", "run", "src/index.ts"]
