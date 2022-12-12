@@ -5,7 +5,7 @@ import { api } from "./api/root";
 const port = parseInt(process.env.PORT) || 3000;
 
 const app = new Hono();
-app.route('/api', api)
+app.route("/api", api);
 
 app.use("/favicon.ico", serveStatic({ path: "./public/favicon.ico" }));
 
@@ -13,6 +13,10 @@ app.get("/", (c) => {
   return c.json({
     message:
       "Hello World! This is hono speaking. Hono means flame in Japanese.",
+    routes: {
+      api: "/api",
+      tweets: "/api/tweets",
+    },
   });
 });
 

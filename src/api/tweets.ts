@@ -17,7 +17,7 @@ interface User {
 
 tweets.get("/", async (c) => {
   return c.json({
-    data: "Tweet root! You can navigate to /api/tweets/:username!",
+    message: "Tweet root! You can navigate to /api/tweets/:username!",
   });
 });
 
