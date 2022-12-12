@@ -10,12 +10,14 @@ app.route("/api", api);
 app.use("/favicon.ico", serveStatic({ path: "./public/favicon.ico" }));
 
 app.get("/", (c) => {
+  const url = c.req.url;
   return c.json({
     message:
       "Hello World! This is hono speaking. Hono means flame in Japanese.",
     routes: {
-      api: "/api",
-      tweets: "/api/tweets",
+      api: {
+        url: `${url}api`,
+      },
     },
   });
 });
