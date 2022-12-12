@@ -15,7 +15,7 @@ api.use("/*", cors());
 api.use(
   "/test",
   cors({
-    origin: "http://google.com",
+    origin: "http://localhost",
     allowHeaders: ["*"],
     allowMethods: ["GET"],
     maxAge: 600,
