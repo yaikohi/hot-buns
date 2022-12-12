@@ -8,7 +8,7 @@ const app = new Hono();
 app.use('/favicon.ico', serveStatic({ path: './public/favicon.ico' }));
 
 app.get("/", (c) => {
-  return c.json({ message: "Hello World!" });
+  return c.json({ message: "Hello World! This is hono speaking. Hono means flame in Japanese." });
 });
 
 app.get("/:name", (c) => {
