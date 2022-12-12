@@ -1,19 +1,11 @@
 import { Hono } from "hono";
+import { bearerAuth } from "hono/bearer-auth";
 
 export const tweets = new Hono();
 
-const header = {
-  headers: {
-    Authorization: `Bearer ${
-      (Bun as any).env.TWITTER_API_BEARER_TOKEN as string
-    }`,
-  },
-};
-interface User {
-  id: string;
-  name: string;
-  username: string;
-}
+// Auth
+const token = "honoiscoolbuttwitterisnt";
+tweets.use("/*", bearerAuth({ token }));
 
 tweets.get("/", async (c) => {
   return c.json({
@@ -56,9 +48,16 @@ tweets.get("/:username/likes/media", async (c) => {
 });
 
 const getTwitterUserId = async (username: string) => {
+  const twitterHeader = {
+    headers: {
+      Authorization: `Bearer ${
+        (Bun as any).env.TWITTER_API_BEARER_TOKEN as string
+      }`,
+    },
+  };
   const res = await fetch(
     `https://api.twitter.com/2/users/by/username/${username}`,
-    header
+    twitterHeader
   );
   const data: User = ((await res.json()) as any).data;
 
@@ -66,15 +65,29 @@ const getTwitterUserId = async (username: string) => {
 };
 
 const getLikedTweetsFromUser = async (userId: string) => {
+  const twitterHeader = {
+    headers: {
+      Authorization: `Bearer ${
+        (Bun as any).env.TWITTER_API_BEARER_TOKEN as string
+      }`,
+    },
+  };
   const url = `https://api.twitter.com/2/users/${userId}/liked_tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;
-  const res = await fetch(url, header);
+  const res = await fetch(url, twitterHeader);
 
   return (await res.json()) as TwitterResponseData;
 };
 
 const getTweetsFromUser = async (userId: string) => {
+  const twitterHeader = {
+    headers: {
+      Authorization: `Bearer ${
+        (Bun as any).env.TWITTER_API_BEARER_TOKEN as string
+      }`,
+    },
+  };
   const url = `https://api.twitter.com/2/users/${userId}/tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;
-  const res = await fetch(url, header);
+  const res = await fetch(url, twitterHeader);
 
   return (await res.json()) as TwitterResponseData;
 };
@@ -116,3 +129,9 @@ interface Attachment {
 }
 
 type EditHistoryTweetIds = string[] | string | any;
+
+interface User {
+  id: string;
+  name: string;
+  username: string;
+}
