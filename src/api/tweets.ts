@@ -53,8 +53,6 @@ tweets.get("/:username/likes/media", async (c) => {
 });
 
 const getTwitterUserId = async (username: string) => {
-  console.log("bearer token: ", twitterBearerToken);
-
   const twitterHeader = {
     headers: {
       Authorization: `Bearer ${twitterBearerToken}`,
@@ -70,8 +68,6 @@ const getTwitterUserId = async (username: string) => {
 };
 
 const getLikedTweetsFromUser = async (userId: string) => {
-  console.log("bearer token: ", twitterBearerToken);
-
   const twitterHeader = {
     headers: {
       Authorization: `Bearer ${twitterBearerToken}`,
@@ -87,7 +83,6 @@ const getLikedTweetsFromUser = async (userId: string) => {
 };
 
 const getTweetsFromUser = async (userId: string) => {
-  console.log("bearer token: ", twitterBearerToken);
   const twitterHeader = {
     headers: {
       Authorization: `Bearer ${twitterBearerToken}`,
