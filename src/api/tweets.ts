@@ -22,6 +22,8 @@ tweets.get("/:username", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getTweetsFromUser(userId);
+  saveToJson(tweets, "tweets");
+
   return c.json({ tweets });
 });
 
@@ -31,6 +33,8 @@ tweets.get("/:username/media", async (c) => {
   const tweets = await getTweetsFromUser(userId);
   const media = getMediaFromTweets(tweets);
 
+  saveToJson(media, "media");
+
   return c.json({ media });
 });
 
@@ -38,6 +42,8 @@ tweets.get("/:username/likes", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getLikedTweetsFromUser(userId); // = liked-tweets
+
+  saveToJson(tweets, "liked-tweets");
 
   return c.json({ tweets });
 });
@@ -48,6 +54,8 @@ tweets.get("/:username/likes/media", async (c) => {
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const likedTweets = await getLikedTweetsFromUser(userId);
   const media = getMediaFromTweets(likedTweets);
+
+  saveToJson(media, "liked-tweets-media");
 
   return c.json({ media });
 });
@@ -63,7 +71,7 @@ const getTwitterUserId = async (username: string) => {
     twitterHeader
   );
   const data: User = ((await res.json()) as any).data;
-
+  console.log("\ngetting the user...", data, "\n");
   return data.id;
 };
 
@@ -75,6 +83,7 @@ const getLikedTweetsFromUser = async (userId: string) => {
   };
   const url = `https://api.twitter.com/2/users/${userId}/liked_tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;
   const res = await fetch(url, twitterHeader);
+  console.log("\ngetting the user-tweets...", res, "\n");
 
   return (await res.json()) as TwitterResponseData;
 };
@@ -92,12 +101,7 @@ const getTweetsFromUser = async (userId: string) => {
 };
 
 const getMediaFromTweets = (tweets: TwitterResponseData): TweetMedia[] => {
-  return tweets.includes.media.map((media: TweetMedia) => ({
-    width: media.width,
-    height: media.height,
-    url: media.url,
-    type: media.type,
-  }));
+  return tweets.includes.media;
 };
 
 interface TweetMedia {
@@ -134,3 +138,25 @@ interface User {
   name: string;
   username: string;
 }
+
+export const saveToJson = async (
+  obj: any,
+  partialFileName: string
+): Promise<void> => {
+  const uid = new Date()
+    .toLocaleTimeString("nl-NL", {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+    })
+    .split("-")
+    .reverse()
+    .join()
+    .replace(/,/g, "")
+    .replace(/:/g, "");
+
+  await Bun.write(`${uid}-${partialFileName}.json`, JSON.stringify(obj));
+};
