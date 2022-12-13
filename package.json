@@ -5,7 +5,8 @@
     "bun-types": "0.3.0"
   },
   "dependencies": {
-    "hono": "^2.6.1"
+    "hono": "^2.6.1",
+    "prisma": "^4.7.1"
   },
   "scripts": {
     "start": "bun run --hot src/index.ts"

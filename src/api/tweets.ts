@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { bearerAuth } from "hono/bearer-auth";
+import { TweetMedia, TwitterResponseData, User } from "../../types";
 
 export const tweets = new Hono();
 
@@ -99,38 +100,3 @@ const getMediaFromTweets = (tweets: TwitterResponseData): TweetMedia[] => {
     type: media.type,
   }));
 };
-
-interface TweetMedia {
-  width: number;
-  media_key: string;
-  url: string;
-  height: number;
-  type: string;
-}
-
-interface TwitterResponseData {
-  data: Tweet[];
-  includes: { media: TweetMedia | TweetMedia[] | any };
-  meta: any;
-}
-
-type Tweet = {
-  edit_history_tweet_ids: EditHistoryTweetIds;
-  author_id: string;
-  attachments: Attachment;
-  text: string;
-  created_at: string;
-  id: string;
-};
-
-interface Attachment {
-  media_keys: string[] | string | any;
-}
-
-type EditHistoryTweetIds = string[] | string | any;
-
-interface User {
-  id: string;
-  name: string;
-  username: string;
-}
