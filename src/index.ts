@@ -9,6 +9,7 @@ const port = parseInt(process.env.PORT) || 3000;
 const app = new Hono();
 app.route("/api", api);
 
+console.dir(Bun.env)
 // logger
 app.use("*", logger());
 
