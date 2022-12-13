@@ -63,7 +63,7 @@ const getTwitterUserId = async (username: string) => {
     twitterHeader
   );
   const data: User = ((await res.json()) as any).data;
-
+  console.log("\ngetting the user...", data, "\n");
   return data.id;
 };
 
@@ -75,8 +75,11 @@ const getLikedTweetsFromUser = async (userId: string) => {
   };
   const url = `https://api.twitter.com/2/users/${userId}/liked_tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;
   const res = await fetch(url, twitterHeader);
+  const data = (await res.json()) as TwitterResponseData;
 
-  return (await res.json()) as TwitterResponseData;
+  console.log("\ngetting the liked-tweets...", data, "\n");
+
+  return data;
 };
 
 const getTweetsFromUser = async (userId: string) => {
@@ -87,17 +90,15 @@ const getTweetsFromUser = async (userId: string) => {
   };
   const url = `https://api.twitter.com/2/users/${userId}/tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;
   const res = await fetch(url, twitterHeader);
+  const data = (await res.json()) as TwitterResponseData;
 
-  return (await res.json()) as TwitterResponseData;
+  console.log("\ngetting the tweets from user...", data, "\n");
+
+  return data;
 };
 
 const getMediaFromTweets = (tweets: TwitterResponseData): TweetMedia[] => {
-  return tweets.includes.media.map((media: TweetMedia) => ({
-    width: media.width,
-    height: media.height,
-    url: media.url,
-    type: media.type,
-  }));
+  return tweets.includes.media;
 };
 
 interface TweetMedia {
