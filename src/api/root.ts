@@ -19,7 +19,7 @@ api.use(
     allowHeaders: ["*"],
     allowMethods: ["GET"],
     maxAge: 600,
-    credentials: false,
+    credentials: true,
   })
 );
 

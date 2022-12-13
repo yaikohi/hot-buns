@@ -1,4 +1,5 @@
 FROM jarredsumner/bun:edge
+RUN bun upgrade
 WORKDIR /src
 COPY package.json package.json
 COPY bun.lockb bun.lockb

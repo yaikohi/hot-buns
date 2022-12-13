@@ -2,7 +2,7 @@
   "version": "1.0.69",
   "name": "hono-app",
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "0.3.0"
   },
   "dependencies": {
     "hono": "^2.6.1"
