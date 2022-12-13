@@ -4,8 +4,13 @@ import { bearerAuth } from "hono/bearer-auth";
 export const tweets = new Hono();
 
 // Auth
-const bearerToken = "honoiscoolbuttwitterisnt"
+const bearerToken = (process.env.HONO_TOKEN ||
+  "honoiscoolbuttwitterisnt") as string;
 tweets.use("/*", bearerAuth({ token: bearerToken }));
+
+// twitter tokens
+const twitterBearerToken = (Bun.env.TWITTER_API_BEARER_TOKEN ||
+  process.env.TWITTER_API_BEARER) as string;
 
 tweets.get("/", async (c) => {
   return c.json({
@@ -50,7 +55,7 @@ tweets.get("/:username/likes/media", async (c) => {
 const getTwitterUserId = async (username: string) => {
   const twitterHeader = {
     headers: {
-      Authorization: `Bearer ${Bun.env.TWITTER_API_BEARER_TOKEN as string}`,
+      Authorization: `Bearer ${twitterBearerToken}`,
     },
   };
   const res = await fetch(
@@ -65,7 +70,7 @@ const getTwitterUserId = async (username: string) => {
 const getLikedTweetsFromUser = async (userId: string) => {
   const twitterHeader = {
     headers: {
-      Authorization: `Bearer ${Bun.env.TWITTER_API_BEARER_TOKEN as string}`,
+      Authorization: `Bearer ${twitterBearerToken}`,
     },
   };
   const url = `https://api.twitter.com/2/users/${userId}/liked_tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;
@@ -77,7 +82,7 @@ const getLikedTweetsFromUser = async (userId: string) => {
 const getTweetsFromUser = async (userId: string) => {
   const twitterHeader = {
     headers: {
-      Authorization: `Bearer ${Bun.env.TWITTER_API_BEARER_TOKEN as string}`,
+      Authorization: `Bearer ${twitterBearerToken}`,
     },
   };
   const url = `https://api.twitter.com/2/users/${userId}/tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;

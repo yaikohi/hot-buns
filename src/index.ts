@@ -3,7 +3,7 @@ import { logger } from "hono/logger";
 import { serveStatic } from "hono/serve-static.bun";
 import { api } from "./api/root";
 
-const port = parseInt(process.env.PORT) || 3000;
+const port = parseInt(process.env.PORT) || 5000;
 
 // adds `/api` route
 const app = new Hono();
