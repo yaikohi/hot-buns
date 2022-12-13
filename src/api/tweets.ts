@@ -4,8 +4,8 @@ import { bearerAuth } from "hono/bearer-auth";
 export const tweets = new Hono();
 
 // Auth
-const token = Bun.env.HONO_TOKEN;
-tweets.use("/*", bearerAuth({ token }));
+const bearerToken = Bun.env.HONO_TOKEN as string;
+tweets.use("/*", bearerAuth({ token: bearerToken }));
 
 tweets.get("/", async (c) => {
   return c.json({
