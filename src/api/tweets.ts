@@ -1,5 +1,6 @@
 import { Hono } from "hono";
 import { bearerAuth } from "hono/bearer-auth";
+import { twitterLikedTweetsURL, twitterTweetsURL } from "../config";
 
 export const tweets = new Hono();
 
@@ -22,6 +23,7 @@ tweets.get("/:username", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getTweetsFromUser(userId);
+  console.log("Retrieving tweets from ", username, "...");
   return c.json({ tweets });
 });
 
@@ -30,13 +32,14 @@ tweets.get("/:username/media", async (c) => {
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getTweetsFromUser(userId);
   const media = getMediaFromTweets(tweets);
-
+  console.log("Retrieving tweets from ", username, " with media...");
   return c.json({ media });
 });
 
 tweets.get("/:username/likes", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
+  console.log("Retrieving liked tweets from ", username, "...");
   const tweets = await getLikedTweetsFromUser(userId); // = liked-tweets
 
   return c.json({ tweets });
@@ -48,6 +51,7 @@ tweets.get("/:username/likes/media", async (c) => {
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const likedTweets = await getLikedTweetsFromUser(userId);
   const media = getMediaFromTweets(likedTweets);
+  console.log("Retrieving liked tweets from ", username, " with media ...");
 
   return c.json({ media });
 });
@@ -73,10 +77,10 @@ const getLikedTweetsFromUser = async (userId: string) => {
       Authorization: `Bearer ${twitterBearerToken}`,
     },
   };
-  const url = `https://api.twitter.com/2/users/${userId}/liked_tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;
+  const url = twitterLikedTweetsURL(userId);
   const res = await fetch(url, twitterHeader);
   const data = (await res.json()) as TwitterResponseData;
-  
+
   return data;
 };
 
@@ -86,7 +90,7 @@ const getTweetsFromUser = async (userId: string) => {
       Authorization: `Bearer ${twitterBearerToken}`,
     },
   };
-  const url = `https://api.twitter.com/2/users/${userId}/tweets?max_results=100&tweet.fields=attachments,author_id,created_at&expansions=attachments.media_keys&media.fields=url,height,width,preview_image_url,alt_text,public_metrics,type`;
+  const url = twitterTweetsURL(userId);
   const res = await fetch(url, twitterHeader);
   const data = (await res.json()) as TwitterResponseData;
 
