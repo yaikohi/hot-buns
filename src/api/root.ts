@@ -8,15 +8,15 @@ export const api = new Hono();
 api.route("/tweets", tweets);
 
 // CORS
-api.use("/*/*", cors());
+api.use("/*", cors());
 api.use(
   "/test",
   cors({
-    origin: "*",
+    origin: ["*", "http://localhost:*"],
     allowHeaders: ["*"],
-    allowMethods: ["*"],
+    allowMethods: ["/*"],
     maxAge: 600,
-    credentials: false,
+    credentials: true,
   })
 );
 
