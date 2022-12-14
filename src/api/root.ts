@@ -14,7 +14,7 @@ api.use(
   cors({
     origin: "localhost:*",
     allowHeaders: ["*"],
-    allowMethods: ["GET"],
+    allowMethods: ["*"],
     maxAge: 600,
     credentials: true,
   })
