@@ -12,7 +12,7 @@ api.use("/*/*", cors());
 api.use(
   "/test",
   cors({
-    origin: "localhost:*",
+    origin: "*",
     allowHeaders: ["*"],
     allowMethods: ["*"],
     maxAge: 600,
