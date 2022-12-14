@@ -8,7 +8,7 @@ export const api = new Hono();
 api.route("/tweets", tweets);
 
 // CORS
-api.use("/*", cors());
+api.use("/*/*", cors());
 api.use(
   "/test",
   cors({
