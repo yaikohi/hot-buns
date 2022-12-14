@@ -6,7 +6,7 @@ import {
   getTweetsFromUser,
   getMediaFromTweets,
   getLikedTweetsFromUser,
-} from "./utils";
+} from "../utils";
 
 export const tweets = new Hono();
 

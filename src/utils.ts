@@ -2,8 +2,8 @@ import {
   twitterBearerToken,
   twitterLikedTweetsURL,
   twitterTweetsURL,
-} from "../config";
-import { User, TwitterResponseData, TweetMedia } from "../types";
+} from "./config";
+import { User, TwitterResponseData, TweetMedia } from "./types";
 
 export const getTwitterUserId = async (username: string) => {
   const twitterHeader = {
