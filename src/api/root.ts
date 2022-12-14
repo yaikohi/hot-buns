@@ -16,7 +16,7 @@ api.use(
     allowHeaders: ["*"],
     allowMethods: ["*"],
     maxAge: 600,
-    credentials: true,
+    credentials: false,
   })
 );
 
