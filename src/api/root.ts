@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { cors } from "hono/cors";
+// import { cors } from "hono/cors";
 import { tweets } from "./tweets";
 
 export const api = new Hono();
@@ -8,17 +8,17 @@ export const api = new Hono();
 api.route("/tweets", tweets);
 
 // CORS
-api.use("/*", cors());
-api.use(
-  "/test",
-  cors({
-    origin: ["*", "http://localhost:*"],
-    allowHeaders: ["*"],
-    allowMethods: ["/*"],
-    maxAge: 600,
-    credentials: true,
-  })
-);
+// api.use("/*", cors());
+// api.use(
+//   "/test",
+//   cors({
+//     origin: ["*", "http://localhost:*"],
+//     allowHeaders: ["*"],
+//     allowMethods: ["/*"],
+//     maxAge: 600,
+//     credentials: true,
+//   })
+// );
 
 api.all("/test", (c) => {
   return c.json({ success: "true!" });
