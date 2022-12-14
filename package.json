@@ -2,13 +2,13 @@
   "version": "1.0.69",
   "name": "hono-app",
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "0.3.0"
   },
   "dependencies": {
-    "hono": "^2.2.5"
+    "hono": "^2.6.1"
   },
   "scripts": {
-    "start": "bun run src/index.ts"
+    "start": "bun run --hot src/index.ts"
   },
   "module": "src/index.js"
 }

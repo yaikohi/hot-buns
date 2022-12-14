@@ -1,0 +1,848 @@
+{
+  "data": [
+    {
+      "edit_history_tweet_ids": ["1602761059366211584"],
+      "created_at": "2022-12-13T20:23:09.000Z",
+      "author_id": "895181348176105472",
+      "text": "@wakadorilvr https://t.co/iQidAbCaWD",
+      "attachments": { "media_keys": ["3_1602761053473054723"] },
+      "id": "1602761059366211584"
+    },
+    {
+      "edit_history_tweet_ids": ["1602738249163804672"],
+      "created_at": "2022-12-13T18:52:30.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @M628Yik: https://t.co/Nj106t2kvJ",
+      "attachments": { "media_keys": ["3_1602689667995906048"] },
+      "id": "1602738249163804672"
+    },
+    {
+      "edit_history_tweet_ids": ["1602641855467950086"],
+      "created_at": "2022-12-13T12:29:28.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @chrisbiscardi: MDX (https://t.co/dcLf4AdE6o) for those who haven't seen it is a markdown parser for ambitious projects. It's extremely…",
+      "id": "1602641855467950086"
+    },
+    {
+      "edit_history_tweet_ids": ["1602388388203593737"],
+      "created_at": "2022-12-12T19:42:17.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @Esqueer_: @elonmusk @omnihedge https://t.co/aqsYdNr7Gr",
+      "attachments": { "media_keys": ["3_1602308435961413632"] },
+      "id": "1602388388203593737"
+    },
+    {
+      "edit_history_tweet_ids": ["1602376094396854273"],
+      "created_at": "2022-12-12T18:53:26.000Z",
+      "author_id": "895181348176105472",
+      "text": "Uhhhhhhhhh https://t.co/TMEo6GAHhA https://t.co/TQBK1V1kT5",
+      "attachments": { "media_keys": ["3_1602376092353970184"] },
+      "id": "1602376094396854273"
+    },
+    {
+      "edit_history_tweet_ids": ["1602374618676854792"],
+      "created_at": "2022-12-12T18:47:34.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/4RJx0jnFH5",
+      "attachments": { "media_keys": ["3_1602374615321481216"] },
+      "id": "1602374618676854792"
+    },
+    {
+      "edit_history_tweet_ids": ["1602372623006306304"],
+      "created_at": "2022-12-12T18:39:38.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/33748OWx7u",
+      "attachments": { "media_keys": ["3_1602372620845973516"] },
+      "id": "1602372623006306304"
+    },
+    {
+      "edit_history_tweet_ids": ["1602369183668473880"],
+      "created_at": "2022-12-12T18:25:58.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/fqAYDVw8b3",
+      "attachments": { "media_keys": ["3_1602369180950577152"] },
+      "id": "1602369183668473880"
+    },
+    {
+      "edit_history_tweet_ids": ["1602350325607927809"],
+      "created_at": "2022-12-12T17:11:02.000Z",
+      "author_id": "895181348176105472",
+      "text": "@bedesqui I had the exact same thought - really faced my lack of knowledge on algorithms and prime's course helps a lot",
+      "id": "1602350325607927809"
+    },
+    {
+      "edit_history_tweet_ids": ["1602330667890757643"],
+      "created_at": "2022-12-12T15:52:55.000Z",
+      "author_id": "895181348176105472",
+      "text": "it's been building for 4+ min but it's just a simple rest api with a minimal amount of routes :/",
+      "id": "1602330667890757643"
+    },
+    {
+      "edit_history_tweet_ids": ["1602330197780570113"],
+      "created_at": "2022-12-12T15:51:03.000Z",
+      "author_id": "895181348176105472",
+      "text": "it's not showing me real time logs anymore... oh well ):",
+      "id": "1602330197780570113"
+    },
+    {
+      "edit_history_tweet_ids": ["1602326386689048576"],
+      "created_at": "2022-12-12T15:35:55.000Z",
+      "author_id": "895181348176105472",
+      "text": "I haven't managed to get hmr to work with bun and honojs yet something to look into in a bit",
+      "id": "1602326386689048576"
+    },
+    {
+      "edit_history_tweet_ids": ["1602326268682403843"],
+      "created_at": "2022-12-12T15:35:26.000Z",
+      "author_id": "895181348176105472",
+      "text": "oh something was up with the railway-app build process",
+      "id": "1602326268682403843"
+    },
+    {
+      "edit_history_tweet_ids": ["1602325448645541888"],
+      "created_at": "2022-12-12T15:32:11.000Z",
+      "author_id": "895181348176105472",
+      "text": "the name as well 炎",
+      "id": "1602325448645541888"
+    },
+    {
+      "edit_history_tweet_ids": ["1602325347663577089"],
+      "created_at": "2022-12-12T15:31:47.000Z",
+      "author_id": "895181348176105472",
+      "text": "I love the honojs favicon it's so cute a little flame",
+      "id": "1602325347663577089"
+    },
+    {
+      "edit_history_tweet_ids": ["1602296023594024960"],
+      "created_at": "2022-12-12T13:35:15.000Z",
+      "author_id": "895181348176105472",
+      "text": "@mizu9944 結局何してた？🦸‍♂️",
+      "id": "1602296023594024960"
+    },
+    {
+      "edit_history_tweet_ids": ["1602278237157081088"],
+      "created_at": "2022-12-12T12:24:35.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/nqCinu3v8w",
+      "attachments": { "media_keys": ["3_1602278226952323073"] },
+      "id": "1602278237157081088"
+    },
+    {
+      "edit_history_tweet_ids": ["1602266292135796736"],
+      "created_at": "2022-12-12T11:37:07.000Z",
+      "author_id": "895181348176105472",
+      "text": "@andrii_sherman @jarredsumner @oven_sh ... where did you get this",
+      "id": "1602266292135796736"
+    },
+    {
+      "edit_history_tweet_ids": ["1602258651942633472"],
+      "created_at": "2022-12-12T11:06:45.000Z",
+      "author_id": "895181348176105472",
+      "text": "@mizu9944 👀",
+      "id": "1602258651942633472"
+    },
+    {
+      "edit_history_tweet_ids": ["1602258384308342784"],
+      "created_at": "2022-12-12T11:05:41.000Z",
+      "author_id": "895181348176105472",
+      "text": "ux/ui tip dont reinvent the wheel and use tailwindcss https://t.co/9kikbmXXu2",
+      "id": "1602258384308342784"
+    },
+    {
+      "edit_history_tweet_ids": ["1602048042915749888"],
+      "created_at": "2022-12-11T21:09:52.000Z",
+      "author_id": "895181348176105472",
+      "text": "Folder",
+      "id": "1602048042915749888"
+    },
+    {
+      "edit_history_tweet_ids": ["1602048014020911106"],
+      "created_at": "2022-12-11T21:09:45.000Z",
+      "author_id": "895181348176105472",
+      "text": "I got one yesterday in my junk box",
+      "id": "1602048014020911106"
+    },
+    {
+      "edit_history_tweet_ids": ["1601967129716486144"],
+      "created_at": "2022-12-11T15:48:21.000Z",
+      "author_id": "895181348176105472",
+      "text": "I signed up for dailyUI but I haven't received any emails I think ?",
+      "id": "1601967129716486144"
+    },
+    {
+      "edit_history_tweet_ids": ["1601936135856525312"],
+      "created_at": "2022-12-11T13:45:11.000Z",
+      "author_id": "895181348176105472",
+      "text": "I replaced nvm with fnm",
+      "id": "1601936135856525312"
+    },
+    {
+      "edit_history_tweet_ids": ["1601936011470274560"],
+      "created_at": "2022-12-11T13:44:42.000Z",
+      "author_id": "895181348176105472",
+      "text": "nu-shell seems a bit too complicated to me",
+      "id": "1601936011470274560"
+    },
+    {
+      "edit_history_tweet_ids": ["1601926599196147715"],
+      "created_at": "2022-12-11T13:07:18.000Z",
+      "author_id": "895181348176105472",
+      "text": "How long can I go on",
+      "id": "1601926599196147715"
+    },
+    {
+      "edit_history_tweet_ids": ["1601926526140022786"],
+      "created_at": "2022-12-11T13:07:00.000Z",
+      "author_id": "895181348176105472",
+      "text": "Going to treat myself again with exploring another new tool",
+      "id": "1601926526140022786"
+    },
+    {
+      "edit_history_tweet_ids": ["1601918945467965440"],
+      "created_at": "2022-12-11T12:36:53.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @senbaku: Alexisさん（@MacTuitui ）さんの時計見られた！（前回渋谷に行った時は迷って見られなかった）とてもかっこいい…！見られて嬉しい。 https://t.co/muTWFGui9H",
+      "attachments": { "media_keys": ["7_1601893995780931584"] },
+      "id": "1601918945467965440"
+    },
+    {
+      "edit_history_tweet_ids": ["1601918846423924738"],
+      "created_at": "2022-12-11T12:36:29.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/cEbd0FuRQ9",
+      "attachments": { "media_keys": ["3_1601918843382800386"] },
+      "id": "1601918846423924738"
+    },
+    {
+      "edit_history_tweet_ids": ["1601918571378008064"],
+      "created_at": "2022-12-11T12:35:24.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @moonpolysoft: Hope everyone in the infosec field is updating their threat models to include potential future owners of the company",
+      "id": "1601918571378008064"
+    },
+    {
+      "edit_history_tweet_ids": ["1601904685337772037"],
+      "created_at": "2022-12-11T11:40:13.000Z",
+      "author_id": "895181348176105472",
+      "text": "@jadoremiu Antwerp is amazing",
+      "id": "1601904685337772037"
+    },
+    {
+      "edit_history_tweet_ids": ["1601886037428543490"],
+      "created_at": "2022-12-11T10:26:07.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/m48hMmejiO",
+      "attachments": { "media_keys": ["3_1601886035318919168"] },
+      "id": "1601886037428543490"
+    },
+    {
+      "edit_history_tweet_ids": ["1601877704885895169"],
+      "created_at": "2022-12-11T09:53:00.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @ctford: ChatGPT has been out less than two weeks and it has more apparent use cases than the entirety of blockchain.",
+      "id": "1601877704885895169"
+    },
+    {
+      "edit_history_tweet_ids": ["1601877640771772416"],
+      "created_at": "2022-12-11T09:52:45.000Z",
+      "author_id": "895181348176105472",
+      "text": "布団の中から",
+      "id": "1601877640771772416"
+    },
+    {
+      "edit_history_tweet_ids": ["1601690391417233408"],
+      "created_at": "2022-12-10T21:28:41.000Z",
+      "author_id": "895181348176105472",
+      "text": "Drunk karaoke night",
+      "id": "1601690391417233408"
+    },
+    {
+      "edit_history_tweet_ids": ["1601670652473544704"],
+      "created_at": "2022-12-10T20:10:15.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/HhbuOjLSa8",
+      "attachments": { "media_keys": ["3_1601670649860218880"] },
+      "id": "1601670652473544704"
+    },
+    {
+      "edit_history_tweet_ids": ["1601619789423996929"],
+      "created_at": "2022-12-10T16:48:09.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @PaoloCrosetto: Does your (EU) country attract or lose top researchers? \n\nAT, CH attract a lot.\n\nFR, DE, BE, ES are open places: as many…",
+      "id": "1601619789423996929"
+    },
+    {
+      "edit_history_tweet_ids": ["1601570017807458305"],
+      "created_at": "2022-12-10T13:30:22.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @tonboon: @JeroenHouben https://t.co/MwsiE98Aai\n\n\"Vanaf begin 2024 plaatsen we de rijtuigkappen en de luifel terug aan de voorzijde van…",
+      "id": "1601570017807458305"
+    },
+    {
+      "edit_history_tweet_ids": ["1601569995531907074"],
+      "created_at": "2022-12-10T13:30:17.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @JosPaalman: @JeroenHouben https://t.co/6wVpsNnw5u",
+      "attachments": { "media_keys": ["3_1601520385287225344"] },
+      "id": "1601569995531907074"
+    },
+    {
+      "edit_history_tweet_ids": ["1601569920340615168"],
+      "created_at": "2022-12-10T13:29:59.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @JeroenHouben: Het feit dat dit gedrocht in 8 jaar tijd nog geen volksopstand heeft ontketend zegt ook veel over ons.",
+      "id": "1601569920340615168"
+    },
+    {
+      "edit_history_tweet_ids": ["1601515669656571905"],
+      "created_at": "2022-12-10T09:54:25.000Z",
+      "author_id": "895181348176105472",
+      "text": "@mizu9944 😢",
+      "id": "1601515669656571905"
+    },
+    {
+      "edit_history_tweet_ids": ["1601377612462690305"],
+      "created_at": "2022-12-10T00:45:49.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @neoludification: 'goblin mode' in het Nederlands is 'vol Karbonkel gaan' (voorbeeld: ik ga dit weekend me ff helemaal terugtrekken, ik…",
+      "id": "1601377612462690305"
+    },
+    {
+      "edit_history_tweet_ids": ["1601331184256323584"],
+      "created_at": "2022-12-09T21:41:20.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/jmhaFiYuGf",
+      "attachments": { "media_keys": ["3_1601331173699076096"] },
+      "id": "1601331184256323584"
+    },
+    {
+      "edit_history_tweet_ids": ["1601331147275141120"],
+      "created_at": "2022-12-09T21:41:11.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/hVtSjxLgfa",
+      "id": "1601331147275141120"
+    },
+    {
+      "edit_history_tweet_ids": ["1601305056648736768"],
+      "created_at": "2022-12-09T19:57:30.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @jetfury: It’s quite obvious you never understood the message in our music \n\nOr perhaps you did back then before became full of hate for…",
+      "id": "1601305056648736768"
+    },
+    {
+      "edit_history_tweet_ids": ["1601290599642312705"],
+      "created_at": "2022-12-09T19:00:04.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @WeirdMedieval: doctor dog treating sick cat, 15th century https://t.co/kYtoLMwwrJ",
+      "attachments": { "media_keys": ["3_1601249091287191552"] },
+      "id": "1601290599642312705"
+    },
+    {
+      "edit_history_tweet_ids": ["1601284008402636801"],
+      "created_at": "2022-12-09T18:33:52.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/baw4rETgmS",
+      "id": "1601284008402636801"
+    },
+    {
+      "edit_history_tweet_ids": ["1601207968787144704"],
+      "created_at": "2022-12-09T13:31:43.000Z",
+      "author_id": "895181348176105472",
+      "text": "is there anyone that has integrated prisma with a qwik js / qwikcity application? I was just looking for reference material as setting up front-end projects can be a bit silly sometimes...",
+      "id": "1601207968787144704"
+    },
+    {
+      "edit_history_tweet_ids": ["1601173674757091328"],
+      "created_at": "2022-12-09T11:15:27.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @jimmy_wales: This is one of the best articles about how Wikipedia works that I have ever seen:\n\nhttps://t.co/8JoLph7O4s",
+      "id": "1601173674757091328"
+    },
+    {
+      "edit_history_tweet_ids": ["1601165909175193601"],
+      "created_at": "2022-12-09T10:44:35.000Z",
+      "author_id": "895181348176105472",
+      "text": "wait",
+      "id": "1601165909175193601"
+    },
+    {
+      "edit_history_tweet_ids": ["1601165836114268160"],
+      "created_at": "2022-12-09T10:44:18.000Z",
+      "author_id": "895181348176105472",
+      "text": "I noticed that I have been saying 'allures to' instead of 'alludes to'",
+      "id": "1601165836114268160"
+    },
+    {
+      "edit_history_tweet_ids": ["1601147586794356737"],
+      "created_at": "2022-12-09T09:31:47.000Z",
+      "author_id": "895181348176105472",
+      "text": "aight but this floor/wall is giving me wood-rot vibes bc of all the supposed moisture in the room https://t.co/h59AO0x1vP",
+      "id": "1601147586794356737"
+    },
+    {
+      "edit_history_tweet_ids": ["1601147384943501313"],
+      "created_at": "2022-12-09T09:30:59.000Z",
+      "author_id": "895181348176105472",
+      "text": "@tkasasagi wow",
+      "id": "1601147384943501313"
+    },
+    {
+      "edit_history_tweet_ids": ["1601147265137414145"],
+      "created_at": "2022-12-09T09:30:30.000Z",
+      "author_id": "895181348176105472",
+      "text": "bipolaroids",
+      "id": "1601147265137414145"
+    },
+    {
+      "edit_history_tweet_ids": ["1601137233045573632"],
+      "created_at": "2022-12-09T08:50:38.000Z",
+      "author_id": "895181348176105472",
+      "text": "@wakadorilvr what is biplair google ask niek",
+      "id": "1601137233045573632"
+    },
+    {
+      "edit_history_tweet_ids": ["1601131692336775168"],
+      "created_at": "2022-12-09T08:28:37.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/x1SURKi9l1",
+      "attachments": { "media_keys": ["3_1601131688863666177"] },
+      "id": "1601131692336775168"
+    },
+    {
+      "edit_history_tweet_ids": ["1601058056791420928"],
+      "created_at": "2022-12-09T03:36:01.000Z",
+      "author_id": "895181348176105472",
+      "text": "目が覚めて寝れるように戻れない",
+      "id": "1601058056791420928"
+    },
+    {
+      "edit_history_tweet_ids": ["1601053777120833536"],
+      "created_at": "2022-12-09T03:19:01.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @ZullieTheWitch: The wreckage of steam engine explosions is a free sci-fi horror aesthetic, in case you needed one. https://t.co/1g7mdGi…",
+      "id": "1601053777120833536"
+    },
+    {
+      "edit_history_tweet_ids": ["1600979383941898240"],
+      "created_at": "2022-12-08T22:23:24.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @shuumai: これ分からんな",
+      "id": "1600979383941898240"
+    },
+    {
+      "edit_history_tweet_ids": ["1600978675113283584"],
+      "created_at": "2022-12-08T22:20:35.000Z",
+      "author_id": "895181348176105472",
+      "text": "@mizu9944 Ohayo",
+      "id": "1600978675113283584"
+    },
+    {
+      "edit_history_tweet_ids": ["1600941558404354048"],
+      "created_at": "2022-12-08T19:53:06.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @Sentdex: OpenAI's ChatGPT AI (a neural network) functioning as a Linux operating system terminal that I am able to navigate, read, writ…",
+      "id": "1600941558404354048"
+    },
+    {
+      "edit_history_tweet_ids": ["1600941135568179202"],
+      "created_at": "2022-12-08T19:51:25.000Z",
+      "author_id": "895181348176105472",
+      "text": "what the fuck https://t.co/iMDEXaJApn",
+      "id": "1600941135568179202"
+    },
+    {
+      "edit_history_tweet_ids": ["1600940458045485056"],
+      "created_at": "2022-12-08T19:48:43.000Z",
+      "author_id": "895181348176105472",
+      "text": "Mensen die zich hoogbegaafd noemen alsof ze een ziekte hebben?? Als je zo slim bent waarom heb je dan geen oplossing voor jouw zogenaamd probleem?? Is toch dom?? Dan ben je toch normaal he",
+      "id": "1600940458045485056"
+    },
+    {
+      "edit_history_tweet_ids": ["1600872094895521792"],
+      "created_at": "2022-12-08T15:17:04.000Z",
+      "author_id": "895181348176105472",
+      "text": "I ordered sleeping pills for when I was sick two weeks ago and it got sent my way only today",
+      "id": "1600872094895521792"
+    },
+    {
+      "edit_history_tweet_ids": ["1600811064509489152"],
+      "created_at": "2022-12-08T11:14:34.000Z",
+      "author_id": "895181348176105472",
+      "text": "皆が自分のウェイで苦労をしています‼️",
+      "id": "1600811064509489152"
+    },
+    {
+      "edit_history_tweet_ids": ["1600810480511197185"],
+      "created_at": "2022-12-08T11:12:14.000Z",
+      "author_id": "895181348176105472",
+      "text": "@mizu9944 うおえらいね‼️よかった",
+      "id": "1600810480511197185"
+    },
+    {
+      "edit_history_tweet_ids": ["1600809919447302144"],
+      "created_at": "2022-12-08T11:10:01.000Z",
+      "author_id": "895181348176105472",
+      "text": "@mizu9944 三時間ネタよ がんばって生きろ",
+      "id": "1600809919447302144"
+    },
+    {
+      "edit_history_tweet_ids": ["1600790907229392898"],
+      "created_at": "2022-12-08T09:54:28.000Z",
+      "author_id": "895181348176105472",
+      "text": "@SAJBlom Omg so cute",
+      "id": "1600790907229392898"
+    },
+    {
+      "edit_history_tweet_ids": ["1600768260885999616"],
+      "created_at": "2022-12-08T08:24:28.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @Cabbibo: I take it back AI is my best friend",
+      "id": "1600768260885999616"
+    },
+    {
+      "edit_history_tweet_ids": ["1600677285396246529"],
+      "created_at": "2022-12-08T02:22:58.000Z",
+      "author_id": "895181348176105472",
+      "text": "元気でた",
+      "id": "1600677285396246529"
+    },
+    {
+      "edit_history_tweet_ids": ["1600666416557998081"],
+      "created_at": "2022-12-08T01:39:47.000Z",
+      "author_id": "895181348176105472",
+      "text": "I want to disappear without a trace",
+      "id": "1600666416557998081"
+    },
+    {
+      "edit_history_tweet_ids": ["1600663475721846785"],
+      "created_at": "2022-12-08T01:28:06.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @shuumai: null Ohhhhhh",
+      "id": "1600663475721846785"
+    },
+    {
+      "edit_history_tweet_ids": ["1600663438535299072"],
+      "created_at": "2022-12-08T01:27:57.000Z",
+      "author_id": "895181348176105472",
+      "text": "https://t.co/DtPMoPaRwd",
+      "attachments": { "media_keys": ["3_1600663436865798144"] },
+      "id": "1600663438535299072"
+    },
+    {
+      "edit_history_tweet_ids": ["1600662776569106432"],
+      "created_at": "2022-12-08T01:25:19.000Z",
+      "author_id": "895181348176105472",
+      "text": "I started feeling stressed for no reason",
+      "id": "1600662776569106432"
+    },
+    {
+      "edit_history_tweet_ids": ["1600659321117085696"],
+      "created_at": "2022-12-08T01:11:35.000Z",
+      "author_id": "895181348176105472",
+      "text": "生きろ",
+      "id": "1600659321117085696"
+    },
+    {
+      "edit_history_tweet_ids": ["1600659005906759680"],
+      "created_at": "2022-12-08T01:10:20.000Z",
+      "author_id": "895181348176105472",
+      "text": "なんで起きてんだ",
+      "id": "1600659005906759680"
+    },
+    {
+      "edit_history_tweet_ids": ["1600607448133693442"],
+      "created_at": "2022-12-07T21:45:28.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @hot_girl_spring: A true programmer https://t.co/mHALSsGtxc",
+      "attachments": { "media_keys": ["3_1600354829108404224"] },
+      "id": "1600607448133693442"
+    },
+    {
+      "edit_history_tweet_ids": ["1600592902811488291"],
+      "created_at": "2022-12-07T20:47:40.000Z",
+      "author_id": "895181348176105472",
+      "text": "is life O(N)",
+      "id": "1600592902811488291"
+    },
+    {
+      "edit_history_tweet_ids": ["1600592860331802624"],
+      "created_at": "2022-12-07T20:47:30.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @chunkbardey: cannot stand when a problem can only be solved by time passing. why not a clever tool or a combination of like herbs",
+      "id": "1600592860331802624"
+    },
+    {
+      "edit_history_tweet_ids": ["1600586545224089600"],
+      "created_at": "2022-12-07T20:22:24.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @Mokshit06: If you like Stitches but were worried about it not working with server components or React 18 streaming, you'll _love_ macar…",
+      "id": "1600586545224089600"
+    },
+    {
+      "edit_history_tweet_ids": ["1600586499480698880"],
+      "created_at": "2022-12-07T20:22:13.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @jayair: There's a lot of chatter around OpenNext today.\n\nLet me share how this came about and why it exists. And my thoughts on it.",
+      "id": "1600586499480698880"
+    },
+    {
+      "edit_history_tweet_ids": ["1600542175397396482"],
+      "created_at": "2022-12-07T17:26:05.000Z",
+      "author_id": "895181348176105472",
+      "text": "@trashh_dev @F5DevLife I am not sure but is the quality of the likes and retweets part of the image deteriorating? I rate that",
+      "id": "1600542175397396482"
+    },
+    {
+      "edit_history_tweet_ids": ["1600541941673754624"],
+      "created_at": "2022-12-07T17:25:10.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @jarredsumner: Introducing Bun v0.3.0\n\n- Reduced memory usage\n- child_process, process.{stdout, stderr}\n- auto install npm packages on i…",
+      "id": "1600541941673754624"
+    },
+    {
+      "edit_history_tweet_ids": ["1600541627927318528"],
+      "created_at": "2022-12-07T17:23:55.000Z",
+      "author_id": "895181348176105472",
+      "text": "日本語下手クソだよ",
+      "id": "1600541627927318528"
+    },
+    {
+      "edit_history_tweet_ids": ["1600538079357452288"],
+      "created_at": "2022-12-07T17:09:49.000Z",
+      "author_id": "895181348176105472",
+      "text": "一般人の普段のことだが私にとっては難しくて苦労していましたんだ",
+      "id": "1600538079357452288"
+    },
+    {
+      "edit_history_tweet_ids": ["1600536055534567429"],
+      "created_at": "2022-12-07T17:01:46.000Z",
+      "author_id": "895181348176105472",
+      "text": "治った",
+      "id": "1600536055534567429"
+    },
+    {
+      "edit_history_tweet_ids": ["1600535849397108749"],
+      "created_at": "2022-12-07T17:00:57.000Z",
+      "author_id": "895181348176105472",
+      "text": "what does it mean to be bipolar google search",
+      "id": "1600535849397108749"
+    },
+    {
+      "edit_history_tweet_ids": ["1600522795540221955"],
+      "created_at": "2022-12-07T16:09:05.000Z",
+      "author_id": "895181348176105472",
+      "text": "消えたいyo",
+      "id": "1600522795540221955"
+    },
+    {
+      "edit_history_tweet_ids": ["1600522714007076869"],
+      "created_at": "2022-12-07T16:08:45.000Z",
+      "author_id": "895181348176105472",
+      "text": "どっから来た？はぁ？",
+      "id": "1600522714007076869"
+    },
+    {
+      "edit_history_tweet_ids": ["1600522630150463488"],
+      "created_at": "2022-12-07T16:08:25.000Z",
+      "author_id": "895181348176105472",
+      "text": "落ち込み中",
+      "id": "1600522630150463488"
+    },
+    {
+      "edit_history_tweet_ids": ["1600506346096529413"],
+      "created_at": "2022-12-07T15:03:43.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @jdebbiel: Thank you Kotaku for covering this correctly!",
+      "id": "1600506346096529413"
+    },
+    {
+      "edit_history_tweet_ids": ["1600505464835432449"],
+      "created_at": "2022-12-07T15:00:13.000Z",
+      "author_id": "895181348176105472",
+      "text": "高かった",
+      "id": "1600505464835432449"
+    },
+    {
+      "edit_history_tweet_ids": ["1600505427887886337"],
+      "created_at": "2022-12-07T15:00:04.000Z",
+      "author_id": "895181348176105472",
+      "text": "コーヒーがすごくおいしかったが",
+      "id": "1600505427887886337"
+    },
+    {
+      "edit_history_tweet_ids": ["1600505382207733768"],
+      "created_at": "2022-12-07T14:59:53.000Z",
+      "author_id": "895181348176105472",
+      "text": "バリスタの機嫌が悪くてちょっと影響されてた",
+      "id": "1600505382207733768"
+    },
+    {
+      "edit_history_tweet_ids": ["1600504519619936257"],
+      "created_at": "2022-12-07T14:56:28.000Z",
+      "author_id": "895181348176105472",
+      "text": "うあ",
+      "id": "1600504519619936257"
+    },
+    {
+      "edit_history_tweet_ids": ["1600504288173760512"],
+      "created_at": "2022-12-07T14:55:32.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @go20597673: おはようございます😃\n\n＃白柴　＃柴犬 https://t.co/vBiMry3MTU",
+      "attachments": { "media_keys": ["3_1600244485249978368"] },
+      "id": "1600504288173760512"
+    },
+    {
+      "edit_history_tweet_ids": ["1600464011639721984"],
+      "created_at": "2022-12-07T12:15:30.000Z",
+      "author_id": "895181348176105472",
+      "text": "RT @sebastienlorber: 🧵 This Week In React\n\n👉 Nextra 2\n👉 Inside React-Query\n👉 Storybook Frameworks + testing\n👉 React Documentary\n👉 Rewrite T…",
+      "id": "1600464011639721984"
+    }
+  ],
+  "includes": {
+    "media": [
+      {
+        "url": "https://pbs.twimg.com/media/Fj4mr7QXoAMsw6s.png",
+        "height": 680,
+        "media_key": "3_1602761053473054723",
+        "width": 789,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/Fj3lwvoVsAAAPYQ.jpg",
+        "height": 2048,
+        "alt_text": "角張った線で描かれた犬のイラスト",
+        "media_key": "3_1602689667995906048",
+        "width": 1447,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjyLCHoXgAAmDi7.png",
+        "height": 263,
+        "media_key": "3_1602308435961413632",
+        "width": 475,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjzIkPVWQAgGTxP.jpg",
+        "height": 2048,
+        "media_key": "3_1602376092353970184",
+        "width": 922,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjzHOQ9XEAAqMNf.jpg",
+        "height": 2048,
+        "media_key": "3_1602374615321481216",
+        "width": 922,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjzFaK9WAAwIyXG.jpg",
+        "height": 947,
+        "media_key": "3_1602372620845973516",
+        "width": 828,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjzCR8WXwAA7K4_.jpg",
+        "height": 1375,
+        "media_key": "3_1602369180950577152",
+        "width": 2268,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjxvjuTWAAE5VU1.jpg",
+        "height": 225,
+        "media_key": "3_1602278226952323073",
+        "width": 225,
+        "type": "photo"
+      },
+      {
+        "height": 888,
+        "media_key": "7_1601893995780931584",
+        "width": 720,
+        "public_metrics": { "view_count": 1118 },
+        "type": "video",
+        "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1601893995780931584/pu/img/-vRSfuurViPri_UY.jpg"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/Fjsos2LWIAICcMK.jpg",
+        "height": 2268,
+        "media_key": "3_1601918843382800386",
+        "width": 2268,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjsK3KnX0AAlzOt.jpg",
+        "height": 1920,
+        "media_key": "3_1601886035318919168",
+        "width": 1080,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjpG-FQWYAAbsIO.jpg",
+        "height": 1152,
+        "media_key": "3_1601670649860218880",
+        "width": 2048,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/Fjm-TiGXgAA8ReP.jpg",
+        "height": 2048,
+        "media_key": "3_1601520385287225344",
+        "width": 946,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjkSN-AXwAA0Tjr.jpg",
+        "height": 2048,
+        "media_key": "3_1601331173699076096",
+        "width": 1152,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjjHkJMXEAAuxyT.jpg",
+        "height": 578,
+        "alt_text": "a medieval drawing of a dog standing upright wearing a hood and holding a bottle. beside him is a cat laying in bed wearing what looks like a nightcap. both have distraught expressions on their faces.",
+        "media_key": "3_1601249091287191552",
+        "width": 568,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjhcybFXEAE8W_d.jpg",
+        "height": 584,
+        "media_key": "3_1601131688863666177",
+        "width": 680,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/Fjay6kdXgAAZR1K.jpg",
+        "height": 680,
+        "media_key": "3_1600663436865798144",
+        "width": 666,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjWaPO-WYAAUZMJ.png",
+        "height": 833,
+        "media_key": "3_1600354829108404224",
+        "width": 640,
+        "type": "photo"
+      },
+      {
+        "url": "https://pbs.twimg.com/media/FjU14YEaUAAij9s.jpg",
+        "height": 1712,
+        "media_key": "3_1600244485249978368",
+        "width": 1284,
+        "type": "photo"
+      }
+    ]
+  },
+  "meta": {
+    "next_token": "7140dibdnow9c7btw450bfifz5mlmwxp7mw5u0j65z6es",
+    "result_count": 97,
+    "newest_id": "1602761059366211584",
+    "oldest_id": "1600464011639721984"
+  }
+}
