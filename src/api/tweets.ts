@@ -7,7 +7,6 @@ import {
   getTweetsFromUser,
   getMediaFromTweets,
   getLikedTweetsFromUser,
-  saveToJson,
 } from "../utils";
 
 export const tweets = new Hono();
@@ -33,8 +32,6 @@ tweets.get("/:username", async (c) => {
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getTweetsFromUser(userId);
 
-  saveToJson(tweets, "tweets");
-
   return c.json({ tweets });
 });
 
@@ -56,8 +53,6 @@ tweets.get("/:username/media", async (c) => {
 
   const media = getMediaFromTweets(tweets);
 
-  saveToJson(media, "media");
-
   return c.json({ media });
 });
 
@@ -69,8 +64,6 @@ tweets.get("/:username/likes", async (c) => {
   console.log("Retrieving liked tweets from ", username, "...");
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = processTweets(await getLikedTweetsFromUser(userId));
-
-  saveToJson(tweets, "liked-tweets");
 
   return c.json({ tweets });
 });
@@ -84,8 +77,6 @@ tweets.get("/:username/likes/media", async (c) => {
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const likedTweets = await getLikedTweetsFromUser(userId);
   const media = getMediaFromTweets(likedTweets);
-
-  saveToJson(media, "liked-tweets-media");
 
   return c.json({ media });
 });
