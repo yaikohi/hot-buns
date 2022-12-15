@@ -8,7 +8,7 @@ export interface TweetMedia {
 
 export interface TwitterResponseData {
   data: Tweet[];
-  includes: { media: TweetMedia | TweetMedia[] | any };
+  includes: { media: TweetMedia | TweetMedia[] | any; users: any | any[] };
   meta: any;
 }
 

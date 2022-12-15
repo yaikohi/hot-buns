@@ -1,11 +1,13 @@
 import { Hono } from "hono";
 import { bearerAuth } from "hono/bearer-auth";
 import { bearerToken } from "../config";
+import { processTweets } from "../processing";
 import {
   getTwitterUserId,
   getTweetsFromUser,
   getMediaFromTweets,
   getLikedTweetsFromUser,
+  saveToJson,
 } from "../utils";
 
 export const tweets = new Hono();
@@ -27,11 +29,12 @@ tweets.get("/", async (c) => {
  */
 tweets.get("/:username", async (c) => {
   const username = c.req.param().username;
+  console.log("Retrieving tweets from ", username, "...");
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getTweetsFromUser(userId);
+
   saveToJson(tweets, "tweets");
 
-  console.log("Retrieving tweets from ", username, "...");
   return c.json({ tweets });
 });
 
@@ -65,7 +68,7 @@ tweets.get("/:username/likes", async (c) => {
   const username = c.req.param().username;
   console.log("Retrieving liked tweets from ", username, "...");
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
-  const tweets = await getLikedTweetsFromUser(userId);
+  const tweets = processTweets(await getLikedTweetsFromUser(userId));
 
   saveToJson(tweets, "liked-tweets");
 
@@ -86,25 +89,3 @@ tweets.get("/:username/likes/media", async (c) => {
 
   return c.json({ media });
 });
-
-export const saveToJson = async (
-  obj: any,
-  partialFileName: string
-): Promise<void> => {
-  const uid = new Date()
-    .toLocaleTimeString("nl-NL", {
-      year: "numeric",
-      month: "numeric",
-      day: "numeric",
-      hour: "numeric",
-      minute: "numeric",
-      second: "numeric",
-    })
-    .split("-")
-    .reverse()
-    .join()
-    .replace(/,/g, "")
-    .replace(/:/g, "");
-
-  await Bun.write(`${uid}-${partialFileName}.json`, JSON.stringify(obj));
-};

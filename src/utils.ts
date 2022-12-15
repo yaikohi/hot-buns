@@ -51,3 +51,25 @@ export const getMediaFromTweets = (
 ): TweetMedia[] => {
   return tweets.includes.media;
 };
+
+export const saveToJson = async (
+  obj: any,
+  partialFileName: string
+): Promise<void> => {
+  const uid = new Date()
+    .toLocaleTimeString("nl-NL", {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+    })
+    .split("-")
+    .reverse()
+    .join()
+    .replace(/,/g, "")
+    .replace(/:/g, "");
+
+  await Bun.write(`${uid}-${partialFileName}.json`, JSON.stringify(obj));
+};

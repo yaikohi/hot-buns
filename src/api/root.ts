@@ -21,7 +21,7 @@ api.use(
 );
 
 api.all("/test", (c) => {
-  return c.json({ success: "true!" });
+  return c.json({ test: "cors?" });
 });
 
 api.get("/", async (c) => {
