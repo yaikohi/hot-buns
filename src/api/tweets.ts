@@ -43,7 +43,7 @@ tweets.get("/:username/media", async (c) => {
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getTweetsFromUser(userId);
   const media = getMediaFromTweets(tweets);
-  console.log("Retrieving tweets from ", username, " with media...");
+  console.log("Retrieving media from tweets of ", username, "...");
   return c.json({ media });
 });
 
@@ -55,7 +55,7 @@ tweets.get("/:username/likes", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   console.log("Retrieving liked tweets from ", username, "...");
-  const tweets = await getLikedTweetsFromUser(userId); // = liked-tweets
+  const tweets = await getLikedTweetsFromUser(userId);
 
   return c.json({ tweets });
 });
