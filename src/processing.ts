@@ -12,22 +12,19 @@ export const processTweets = (twitterResponse: TwitterResponseData) => {
   const mediaList = twitterResponse.includes.media.map((media) => media);
 
   const tweetsWithMedia = tweetsList.map((tweet) => {
-    // return the tweet if there aren't any media_keys
     if (!tweet?.attachments?.media_keys) {
       return tweet;
     }
 
-    // if there are multiple media keys, handle accordingly
     if (tweet.attachments.media_keys.length > 1) {
       return {
         ...tweet,
-        media: tweet.attachments.media_keys.filter((mkey) => {
-          return mediaList.filter((mediaItem) => mediaItem.media_key === mkey);
+        media: mediaList.filter((mediaItem) => {
+          return tweet.attachments.media_keys.includes(mediaItem.media_key);
         }),
       };
     }
 
-    // if there is only one media_key, handle accordingly
     if (tweet.attachments.media_keys.length === 1) {
       return {
         ...tweet,
@@ -36,12 +33,6 @@ export const processTweets = (twitterResponse: TwitterResponseData) => {
         ),
       };
     }
-    return {
-      ...tweet,
-      media: mediaList.map(
-        (mediaItem) => mediaItem.media_key === tweet?.attachments?.media_keys[0]
-      ),
-    };
   });
 
   return usersList.map((user) => ({
