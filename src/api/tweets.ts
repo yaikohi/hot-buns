@@ -10,14 +10,22 @@ import {
 
 export const tweets = new Hono();
 
+// Adds basic auth with a bearer token
 tweets.use("/*", bearerAuth({ token: bearerToken }));
 
+/**
+ * The 'root' 
+ */
 tweets.get("/", async (c) => {
   return c.json({
     message: "Tweet root! You can navigate to /api/tweets/:username!",
   });
 });
 
+
+/**
+ * Exposes tweets of `:username`
+ */
 tweets.get("/:username", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
@@ -26,6 +34,10 @@ tweets.get("/:username", async (c) => {
   return c.json({ tweets });
 });
 
+
+/**
+ * Exposes media-`:username`'s tweets
+ */
 tweets.get("/:username/media", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
@@ -35,6 +47,10 @@ tweets.get("/:username/media", async (c) => {
   return c.json({ media });
 });
 
+
+/**
+ * Exposes liked-tweets of `:username`
+ */
 tweets.get("/:username/likes", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
@@ -44,7 +60,9 @@ tweets.get("/:username/likes", async (c) => {
   return c.json({ tweets });
 });
 
-// Endpoint for getting the media-attachments of the liked tweets of the user.
+/**
+ * Exposes media from liked-tweets of `:username`
+ */
 tweets.get("/:username/likes/media", async (c) => {
   const username = c.req.param().username;
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
