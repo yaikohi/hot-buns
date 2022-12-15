@@ -14,14 +14,13 @@ export const tweets = new Hono();
 tweets.use("/*", bearerAuth({ token: bearerToken }));
 
 /**
- * The 'root' 
+ * The 'root'
  */
 tweets.get("/", async (c) => {
   return c.json({
     message: "Tweet root! You can navigate to /api/tweets/:username!",
   });
 });
-
 
 /**
  * Exposes tweets of `:username`
@@ -36,30 +35,36 @@ tweets.get("/:username", async (c) => {
   return c.json({ tweets });
 });
 
-
 /**
  * Exposes media-`:username`'s tweets
  */
 tweets.get("/:username/media", async (c) => {
   const username = c.req.param().username;
+  console.log("Retrieving media from tweets of ", username, "...");
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getTweetsFromUser(userId);
+
+  if (!tweets?.includes?.media) {
+    c.status(404);
+    return c.json({
+      error: `No media found! There are tweets of ${username} but none of them contain any attachments/media.`,
+    });
+  }
+
   const media = getMediaFromTweets(tweets);
 
   saveToJson(media, "media");
 
-  console.log("Retrieving media from tweets of ", username, "...");
   return c.json({ media });
 });
-
 
 /**
  * Exposes liked-tweets of `:username`
  */
 tweets.get("/:username/likes", async (c) => {
   const username = c.req.param().username;
-  const userId = (await getTwitterUserId(username)) || "895181348176105472";
   console.log("Retrieving liked tweets from ", username, "...");
+  const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const tweets = await getLikedTweetsFromUser(userId);
 
   saveToJson(tweets, "liked-tweets");
@@ -72,10 +77,10 @@ tweets.get("/:username/likes", async (c) => {
  */
 tweets.get("/:username/likes/media", async (c) => {
   const username = c.req.param().username;
+  console.log("Retrieving liked tweets from ", username, " with media ...");
   const userId = (await getTwitterUserId(username)) || "895181348176105472";
   const likedTweets = await getLikedTweetsFromUser(userId);
   const media = getMediaFromTweets(likedTweets);
-  console.log("Retrieving liked tweets from ", username, " with media ...");
 
   saveToJson(media, "liked-tweets-media");
 
