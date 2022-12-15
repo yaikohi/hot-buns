@@ -1,6 +1,3 @@
-// 1. Set up root '/api' route.
-// 2. Add the api-'/api' route to the main honojs app.
-
 import { Hono } from "hono";
 import { cors } from "hono/cors";
 import { tweets } from "./tweets";
@@ -15,9 +12,9 @@ api.use("/*", cors());
 api.use(
   "/test",
   cors({
-    origin: "http://localhost",
+    origin: ["*", "http://localhost:*"],
     allowHeaders: ["*"],
-    allowMethods: ["GET"],
+    allowMethods: ["*"],
     maxAge: 600,
     credentials: true,
   })
